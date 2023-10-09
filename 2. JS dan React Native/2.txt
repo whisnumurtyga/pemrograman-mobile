@@ -1,0 +1,92 @@
+	- Install Android Studio , JDK, NVM
+	- Matikan Firewall kalo gak connect
+	
+
+Pengertian React
+	- Library js untuk mengembangkan UI (kode yang kelihatan di user)
+Sejarah Perkembangan React
+	- 2011 awalnya rototype dari FaxJS, fax js saat itu diterapkan ke fitur pencarian milik facebook
+	- 2012 FaxJS disempurnakan menjadi library baru bernama rect, pemilihan nama react terinspirasi dari kata reactive (sesuai konsep react kalo ada komponen berubah komponen lain ikut berubah), implementasinya pada facebook ads
+	- 2013 Jordan Walke resemi memperkenalkan react saat JavaScrip Conference di Florida, mulai saat itu react terus dikembangkan menjadi proyek open source JS Front End
+	- 2015 React Native library tambahan biar rect bisa di aplikasi Android dan IOS contoh netflix dan airbnb
+	- 2019 React merilis versi 16.8 menghadirkan fitur hook, dengan adanya hook kode react bisa sepenuhnya ditulis dalam bentuk functional component dari sebelumnya class component
+EcmaScript untuk React
+	- React Native berbasis react adalah library js jadi js menjadi skill dasar
+	- Sederhananya EcmaScript adalah javascript itu sendiri, cuman fiturnya dditambah 
+		contoh ES6 2015
+		class-arrow function-let-var-const
+	- Timeine
+		97 ES1, 98 ES2, 99 ES3 (REGEX), 99 ES4, 2009 ES5 (JSON SUPPORT DAN ARRAY)
+Variable
+	1. Var 
+		- bisa diubah tapi function scope
+		- contoh var dalam looping bisa di akses variable iterasinya diluar looping gampangannya variabel global
+	2. Let 
+		- bisa diubah tapi block scope
+		- tidak bisa diakses dalam kasus skop looping
+	3. Const
+		- variabel yang valuenya gabisa diubah, konstan
+		- namun bisa diubah kalo
+			a. elemen dalam array constant
+			b. property dari constant object
+			
+Class dan Inheritance
+Arrow Function
+Destructuring
+Spread Operator
+Array Method (forEach dan Map)
+
+JSX
+	- Extension JS untuk memudahkan pembuatan react Element, mirip seperti HTML biasa
+	- Agar bisa menggunakan JSX kita perlu bantuan library babel
+	Aturan Dasar Penulisan JSX
+		a. ELemen HTML jangan pake string
+		b. kalo lebih dari 1 tag harus dipakein kurung dan harus ada 1 pembungkus
+		c. kalo elemen html tag penutupnya kek img itu harus dikasih "/" sebelum tag penutup
+		
+Staatement dalam JSX
+	- Template string pada jsx gk perlu tanda dollar
+	- Array Processing menggunakan map untuk menggenerate elemen html dengan looping
+	
+React Component
+	- Komponen adalah bagian kecil dari kode program yang bertanggung jawab untuk menampilkan bagian tertentu
+	- Konsep Ideal dari React Component adalah menampilkan satu bagian web saja, jika komponen itu mengelola banyak bagian sekaligus berarti pecah lagi menjadi lebih kecil
+	- Cara membuat Komponen	pada React
+		a. Class Component
+		b. Function Component
+
+Props 
+	- Mengirim data pada component melalui atribut saat memanggil component
+	- Props children adalah nilai yang di apit oleh tag component
+	
+Props
+	- Sebuah fitur di react Untuk mengirim antar component
+	- kalo class component manggilnya pake awalan this.props.(nama props)
+	- kalo function component tanpa this terus parameternya dditaroh dii parameter fungsi 
+	
+Event 
+	- Pemantik seperti click, double click dan hover
+	- Dan untuk setiap event kita bisa membuat sebuah event handle 
+	- Misal ketika sebuah tombol di klik tampilkan sebuah pesan atau inputan
+	
+State
+	- State adalah tempat penyimpanan data ddi dalam komponen 
+	- Jika nilai state berubah maka komponen akan di render ulang
+	- Prinsip kerja state setiap kali nilainya berubah maka method render() dari sebuah component akan dijalankan ulang
+	
+React Native State dan Virtual DOM
+	- React Pakenya virtual DOM juga tapi jalannya di JavaScript
+	- Virtual DOM adalah representasi Actual DOM
+	- Ketika state berubah react native itu membuat virtual dom baru
+		- terus comparekan actual dom sama virtual dom baru 
+		- nah nanti yang beda itu yang dirender jadi gk semua
+		- makanya itu react native lebih cepet karena daripada merubah dom asli ya pake virtual dom itu
+		- Virtual DOM key feature of react native
+		
+Alur pengiriman Data di React
+	1. Perpndahan data antar component melalui props
+	2. Data yang diperlukan untuk porses internal adalah state
+	3. Jika state ingin dikirim ke komponen lain itu lewat props
+	4. Tapi props hanya bisa dikirim bertingkat kayak parent, ke child dan grand child
+	
+Tugas install environtement di laptop masing masing

@@ -1,0 +1,63 @@
+
+deskripsi mk
+front end aja 
+datanya dari public api
+
+front end tampilan depan
+back end belakang layar
+
+contoh analogi
+front end itu hasil masakannya, back end itu ya dapurnya cara masak gimana bahannya apa aja dll
+
+materi public api minggu ke 4
+react 2-3 pertemuan bru react nativenya
+
+tugas 30%
+uts 20%
+uas 50%
+
+
+materi 1 
+pemrograman mobile
+
+final project 4-5 orang, tentukan ide atau nama aplikasi mobile fp
+
+js framework untuk membuat mobile application untuk ios dan android
+based on react js untuk website user interface yang dibuat fesbuk tp react native mobel
+kalo dekstop elektron
+belajar satu bahasa js bsa untuk mendevelop 3 platform
+biasanya andro java dab ios itu swift atau c
+kelbihan koding multi platform, industri software house ada klien minta cepet tp minta di beda platform sekaligus dan budget terbatas
+kelmahannya menurunkan performa karwna pssti perlu render dlu
+react native populernya meningkat untuk cross platform tapi hemat budget contoh apk pake react native fb wa ig word discord pinterest
+
+kebapa pake react natuve
+js dipercaya makanya react natuve dipercaya
+one codebase for two platform
+use language already know js familiar
+js semakin populer
+
+core componebt dan native component
+bisa functional xomponen bisa class xomponent
+ 
+bridging jembatan native, kita bikin class java terus diimport di react native
+component bisa dioanggil terys di render ke andro atau ios view
+
+core component
+react native ui component ~ Android 00View  ~ Ios View 
+corw component sudah dibuat oleh react nativenya
+community component itu pihaj ke 3 
+native component, compnent yang kit apake sendiri
+nanti halaman mobel yg kita buat itu susunannya ya seperti jtu
+
+react fundamentals
+components  
+fuctional component
+class component
+jsx > 
+syntax untuk menulis elemen html di dalam js biar bisa menampilksn visual secara dinamis
+props - pengiriman data antar component, sehingga parent bisa menggunakan child component
+state 
+mirip varibael, wadah untuk menyimpan data
+biasanya untuk conditional rendering biar ubah tampilanbsecwra dinamis
+ketika ada state yang brrubah dia merender ulang sesuai kondisi yang terpenuhi

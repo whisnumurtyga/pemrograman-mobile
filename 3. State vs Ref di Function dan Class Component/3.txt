@@ -1,0 +1,56 @@
+1. React Hooks
+	- Class Component beralih ke Functional Component
+	- Sebelumnya state gak bisa pake functional component
+	- UseState(), useRef(), useEffect(), useContext(), useReducer(), useMemo()
+	
+2. Bikin State
+	- state => tempat menyimpan data yang jika nilainya berubah, komponen akan di render ulang.  
+	- Class => this.state
+	- Functional Component => useState(<nilai awal>
+		[nama state, function untuk update nilai statenya]
+	- 
+
+3. Ref
+	- sejenis variable
+	- untuk menyimpan data 
+	- bedanya useRef gak terkena efek render ulang ketika nilainya diubah
+	- kalo difunctional component pake useRef()
+	- kalo di class component dia adalah property di constructor method, soalnya kan dia didalam constructor jadi walaupun bsa diubah tp nanti ballik lg setelah render (karena dia didalam constructor)
+	- Untuk mengambil nilai di form yang 
+	- Kapan Penggunaan Usee Ref:
+		a. 
+
+4. Form Input
+	- Bisa by event (on change, 
+	- 
+	
+5. FORM input
+	- Ref tidak memiliki nilai control atas inputan (uncontrolled component)
+	- State adalah controlled component
+	- Lebih enak pake ref karena gk render ulang tapi sama sama bisa dapat datanya
+	
+6. Siklus Hidup Komponen React di Class
+	- Mounting 
+		=> pertama kali koomponen itu muncul
+		Fase Mounting
+			Pada fase mounting, komponen akan memanggil metode-metode berikut:
+			constructor(): Metode ini dipanggil pertama kali ketika komponen dibuat. Metode ini biasanya digunakan untuk menginisialisasi state dan props.
+			componentWillMount(): Metode ini dipanggil sebelum komponen dirender. Metode ini biasanya digunakan untuk melakukan operasi yang tidak boleh dilakukan di dalam metode render, seperti membuat permintaan ke API atau melakukan manipulasi DOM.
+			render(): Metode ini dipanggil untuk menghasilkan output HTML dari komponen.
+			componentDidMount(): Metode ini dipanggil setelah komponen dirender. Metode ini biasanya digunakan untuk melakukan operasi yang membutuhkan komponen sudah dirender, seperti menambahkan event listener atau membuat subscription.
+	- Updating 
+		=> Ketika nilai state berubah
+		Fase Updating
+			Pada fase updating, komponen akan memanggil metode-metode berikut:
+			componentWillReceiveProps(): Metode ini dipanggil sebelum komponen menerima props baru. Metode ini biasanya digunakan untuk memvalidasi props baru sebelum diterapkan ke komponen.
+			shouldComponentUpdate(): Metode ini dipanggil untuk menentukan apakah komponen harus dirender ulang. Metode ini biasanya digunakan untuk mengoptimalkan kinerja aplikasi.
+			componentWillUpdate(): Metode ini dipanggil sebelum komponen dirender ulang. Metode ini biasanya digunakan untuk melakukan operasi yang tidak boleh dilakukan di dalam metode render, seperti membuat permintaan ke API atau melakukan manipulasi DOM.
+			render(): Metode ini dipanggil untuk menghasilkan output HTML dari komponen.
+			componentDidUpdate(): Metode ini dipanggil setelah komponen dirender ulang. Metode ini biasanya digunakan untuk melakukan operasi yang membutuhkan komponen sudah dirender ulang, seperti mengupdate state atau melakukan manipulasi DOM.
+	- Unmounting
+		=> Ketika komonent di hapus dari DOM
+			Pada fase unmounting, komponen akan memanggil metode berikut:
+				componentWillUnmount(): Metode ini dipanggil sebelum komponen dihapus dari DOM. Metode ini biasanya digunakan untuk membatalkan subscription atau membersihkan state.	
+	
+7. Siklus Hidup di Function
+	- kalo functiona component cukup pake useEffect, tinggal syntaxnya aja
