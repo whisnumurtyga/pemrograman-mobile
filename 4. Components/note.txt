@@ -1,0 +1,52 @@
+COMPONENT
+
+1. Core Components 
+	- Basic Component, User Interface, List Views, iOS Specific, Android Specific
+	- Tapi kita bisa bikin component sendiri
+	- Bisa juga kita memakai komponen pihak ketiga
+
+2. Basic Components	
+	a. View => Seperti Div
+		- Fundamental Component, container, flexbox, style, touch handing and accessibility controls
+		- UIView (IOS), android.view(Android), <div> (Web)
+		- View di desain untuk nested bersarang, jadi dalam view ada view lagi bahkan ada anak anaknya
+	b. Text => Komponent untuk menampilkan text
+		- Menampilkan text
+		- nesting styling dan touch handling
+		- text itu harus dibungkus dengan komponen text kalo lgsg gabisa
+	c. Image => Komponen untuk menampilkan gambar
+		- Bisa static resource, network image, temporary image, disk, camera roll
+		- Note that for nerwork and data image need define dimension manually
+	d. Text Input => Untuk input text handling form
+		- Untuk handle form
+		- 	Support event onChangeText
+	e. ScrollView => Provides a scrolling container (tapi agak kurang karena render semua sampe bawah)
+		- Scrooll view akan merender semua childnya 
+		- Kelemahannya menampilkan semuanya walau belum tampil dilayar
+	f. ListView => Kek scrool view tapi hanya render yang tampil di layar
+		- - Kalo list nanti kita ngasih batasan keknya
+	g. Stylesheet => Kalo menggunakan css
+		- const styles = StykeSheet.create
+		- bedanya css di jsx sama web biasa itu di jsx camel case penulisan propertynyya
+		- saran : jangan inline css bisa taroh bawah atau file lain
+		
+3. User Interface Components
+	a. Buttons => Untuk handing touch that should render
+		- eventnya onPress bukan onClick
+		- 
+	b. Switch => Handle boolean input 
+		- onValueChange
+		
+4. List View Component
+	not like scrool view only render item currently showing, sesuai kalo mau display banyak list data
+	
+	a. FlatList
+	b. SectionList
+	
+5. Android Specific Component
+	a. BackHandler => untuk detect tombol back
+	b. DrawerLayoutAndroid
+	c. PermissionAndroid
+	d. ToastAndroid
+
+4. Alternatif biar bisa dipake ios dan andro bisa pake compnent pihak ke 3 react native drawer

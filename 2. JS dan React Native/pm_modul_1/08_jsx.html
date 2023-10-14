@@ -15,44 +15,47 @@
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+        console.log('NAMA: Whisnumurty Galih Ananta')
+        console.log('NIM: 1203210002')
+        
         // Hello
-        // const myElement = <h3 id="judul">Hello React</h3>;
+         const myElement = <h3 id="judul">Hello React</h3>;
 
         // Aturan Dasar
         // const myElement = "<h1 id="judul">Hello React</h1>"; // salah
-        // const myElement = <h1 id="judul">Hello React</h1>; // benar
+        const myElement = <h1 id="judul">Hello React</h1>; // benar
 
         // Aturan Dasar
         // const myElement = <img src="https://10tph8qrsp2c6.cdn.shift8web.com/wp-content/uploads/elementor/thumbs/logo-ittelkom-surabaya-website-1-q2szy5mrgjyi73cu6i73fck3p40v33hjvitv0x5p8g.png" >; // salah
-        // const myElement = <img src="https://10tph8qrsp2c6.cdn.shift8web.com/wp-content/uploads/elementor/thumbs/logo-ittelkom-surabaya-website-1-q2szy5mrgjyi73cu6i73fck3p40v33hjvitv0x5p8g.png" />; // benar
+         const myElement = <img src="https://10tph8qrsp2c6.cdn.shift8web.com/wp-content/uploads/elementor/thumbs/logo-ittelkom-surabaya-website-1-q2szy5mrgjyi73cu6i73fck3p40v33hjvitv0x5p8g.png" />; // benar
 
         // Aturan Dasar
         // const myElement = (
         //     <p>Belajar Javascript</p>
         //     <p>Belajar React</p>
         // ); // salah
-        // const myElement = (
-        //     <div>
-        //         <p>Belajar Javascript</p>
-        //         <p>Belajar React</p>
-        //     </div>
-        // ); // benar
+         const myElement = (
+             <div>
+                 <p>Belajar Javascript</p>
+                <p>Belajar React</p>
+             </div>
+         ); // benar
 
-        // Statement di JSX
-        // let myText = "Belajar React";
-        // const myElement = (
-        //     <div>
-        //         <h3>{myText}</h3>
-        //     </div>
-        // );
+         //Statement di JSX
+         let myText = "Belajar React";
+         const myElement = (
+             <div>
+                 <h3>{myText}</h3>
+             </div>
+         );
 
         // Array Processing
-        // let items = ["Meja", "Kursi", "Lemari"];
-        // const myElement = (
-        //     <ul>
-        //         {items.map((item, index) => <li>{item}</li>)}
-        //     </ul>
-        // );
+         let items = ["Meja", "Kursi", "Lemari"];
+         const myElement = (
+             <ul>
+                 {items.map((item, index) => <li>{item}</li>)}
+             </ul>
+         );
 
         ReactDOM.createRoot(document.getElementById('root')).render(myElement);
     </script>
