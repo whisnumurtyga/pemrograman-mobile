@@ -1,20 +1,45 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { StatusBar, Text } from "react-native";
+import {
+  AlignItemsLayout,
+  DirectionLayout,
+  DisplayAnImageWithStyle,
+  FixedDimensionsBasics,
+  Flex,
+  FlexDimensionsBasics,
+  FlexDirectionBasics,
+  JustifyContentBasics,
+  LotsOfStyles,
+  NativeBaseExample,
+  PercentageDimensionsBasics,
+  PositionLayout,
+  TodoList,
+  WidthHeightBasics,
+} from "./screens";
 
-export default function App() {
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+    <>
+      <StatusBar style={{ padding: 0 }} />
+      <Text>Nama: Whisnumurty Galih Ananta</Text>
+      <Text>NIM: 1203210002</Text>
+      {/* <LotsOfStyles/> */}
+      {/* <FixedDimensionsBasics/> */}
+      {/* <FlexDimensionsBasics/> */}
+      {/* <PercentageDimensionsBasics/> */}
+      {/* <Flex/> */}
+      {/* <FlexDirectionBasics/> */}
+      {/* <JustifyContentBasics/> */}
+      {/* <AlignItemsLayout/> */}
+      {/* <WidthHeightBasics /> */}
+      {/* <PositionLayout/> */}
+      {/* <DisplayAnImageWithStyle/> */}
+      {/* <NativeBaseExample/> */}
+      <TodoList/>
+      {/* Panggil Komponen Di Sini */}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+    </>
+  );
+};
+
+export default App;
