@@ -57,7 +57,7 @@ const Article = () => {
                 <Separator height={10} />
                 <View style={{ backgroundColor: "gray", height: 1 }} />
                 <Separator height={20} />
-                <Button text="Share" onPress={ButtonHandler} />
+                <Button text="Whisnumurty Galih Ananta - 1203210002" onPress={ButtonHandler} />
                 <Separator height={70} />
             </View>
         </ScrollView>
