@@ -12,7 +12,9 @@ const App = () => {
   return (
     <View style={{ paddingTop: 0, flex: 1 }}>
       {/* Panggil Screen Komponen Di Sini */}
-      <PressableScreen/>
+      {/* <PressableScreen/> */}
+      <Text>Open up App.js to start working on your app!</Text>
+
     </View>
   );
 };
