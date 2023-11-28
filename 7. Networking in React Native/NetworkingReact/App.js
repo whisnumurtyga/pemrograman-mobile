@@ -1,5 +1,5 @@
 import React from "react";
-import { StatusBar } from "react-native";
+import { StatusBar, Text } from "react-native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 import Home from "./screens/home";
@@ -21,6 +21,8 @@ const App = () => {
 
   return (
     <NavigationContainer>
+      <Text>Whisnumurty Galih Ananta</Text>
+      <Text>1203210002</Text>
       <StatusBar style="auto" backgroundColor="#AA0002" />
       <Stack.Navigator>
         <Stack.Screen
